@@ -36,17 +36,17 @@
     {
       "test": "Dynamic Quest Generation #1",
       "success": true,
-      "details": "Generated: Enigmatic Quest in Ancient Ruins..."
+      "details": "Generated: Dynamic Quest in Ancient Ruins..."
     },
     {
       "test": "Dynamic Quest Generation #2",
       "success": true,
-      "details": "Generated: Journey of Discovery in Corrupted Forest..."
+      "details": "Generated: Lost Secrets Found in Corrupted Forest..."
     },
     {
       "test": "Dynamic Quest Generation #3",
       "success": true,
-      "details": "Generated: Betrayal Uncovered..."
+      "details": "Generated: Broken Trust..."
     },
     {
       "test": "Dynamic Quest Generation #4",
@@ -66,7 +66,7 @@
     {
       "test": "Core System Integration",
       "success": true,
-      "details": "Successfully started dynamic quest: dynamic_discovery_8335445c"
+      "details": "Successfully started dynamic quest: dynamic_discovery_62249813"
     }
   ]
 }
