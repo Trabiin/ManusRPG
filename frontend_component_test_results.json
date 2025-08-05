@@ -1,0 +1,2833 @@
+{
+  "test_summary": {
+    "total_tests": 203,
+    "successful_tests": 65,
+    "failed_tests": 138,
+    "success_rate": 32.01970443349754,
+    "average_duration": 0.00010991683734461592
+  },
+  "detailed_results": [
+    {
+      "test_name": "Component Structure: game/EquipmentManager.jsx",
+      "success": true,
+      "duration": 0.0008866786956787109,
+      "error_message": null,
+      "details": {
+        "is_valid": true,
+        "issues": null,
+        "has_react_import": true,
+        "has_export": true,
+        "has_jsx": true,
+        "has_hooks": true,
+        "has_api_calls": true,
+        "has_error_handling": true,
+        "has_prop_types": false,
+        "component_complexity": "high",
+        "file_size": 13414,
+        "line_count": 426
+      }
+    },
+    {
+      "test_name": "Component Structure: game/CharacterEquipment.jsx",
+      "success": true,
+      "duration": 0.0006060600280761719,
+      "error_message": null,
+      "details": {
+        "is_valid": true,
+        "issues": null,
+        "has_react_import": true,
+        "has_export": true,
+        "has_jsx": true,
+        "has_hooks": true,
+        "has_api_calls": false,
+        "has_error_handling": false,
+        "has_prop_types": false,
+        "component_complexity": "high",
+        "file_size": 11943,
+        "line_count": 313
+      }
+    },
+    {
+      "test_name": "Component Structure: game/InventoryGrid.jsx",
+      "success": true,
+      "duration": 0.0005433559417724609,
+      "error_message": null,
+      "details": {
+        "is_valid": true,
+        "issues": null,
+        "has_react_import": true,
+        "has_export": true,
+        "has_jsx": true,
+        "has_hooks": true,
+        "has_api_calls": false,
+        "has_error_handling": false,
+        "has_prop_types": false,
+        "component_complexity": "high",
+        "file_size": 11206,
+        "line_count": 296
+      }
+    },
+    {
+      "test_name": "Component Structure: game/EquipmentTooltip.jsx",
+      "success": true,
+      "duration": 0.0005035400390625,
+      "error_message": null,
+      "details": {
+        "is_valid": true,
+        "issues": null,
+        "has_react_import": true,
+        "has_export": true,
+        "has_jsx": true,
+        "has_hooks": false,
+        "has_api_calls": false,
+        "has_error_handling": false,
+        "has_prop_types": false,
+        "component_complexity": "high",
+        "file_size": 8181,
+        "line_count": 213
+      }
+    },
+    {
+      "test_name": "Component Structure: game/EquipmentSlot.jsx",
+      "success": true,
+      "duration": 0.0002675056457519531,
+      "error_message": null,
+      "details": {
+        "is_valid": true,
+        "issues": null,
+        "has_react_import": true,
+        "has_export": true,
+        "has_jsx": true,
+        "has_hooks": true,
+        "has_api_calls": false,
+        "has_error_handling": false,
+        "has_prop_types": false,
+        "component_complexity": "medium",
+        "file_size": 5593,
+        "line_count": 190
+      }
+    },
+    {
+      "test_name": "Component Structure: ui/tabs.jsx",
+      "success": true,
+      "duration": 0.00010967254638671875,
+      "error_message": null,
+      "details": {
+        "is_valid": true,
+        "issues": null,
+        "has_react_import": true,
+        "has_export": true,
+        "has_jsx": true,
+        "has_hooks": false,
+        "has_api_calls": false,
+        "has_error_handling": false,
+        "has_prop_types": false,
+        "component_complexity": "low",
+        "file_size": 1755,
+        "line_count": 63
+      }
+    },
+    {
+      "test_name": "Component Structure: ui/separator.jsx",
+      "success": true,
+      "duration": 6.389617919921875e-05,
+      "error_message": null,
+      "details": {
+        "is_valid": true,
+        "issues": null,
+        "has_react_import": true,
+        "has_export": true,
+        "has_jsx": true,
+        "has_hooks": false,
+        "has_api_calls": false,
+        "has_error_handling": false,
+        "has_prop_types": false,
+        "component_complexity": "low",
+        "file_size": 647,
+        "line_count": 28
+      }
+    },
+    {
+      "test_name": "API Integration: App.jsx",
+      "success": false,
+      "duration": 0.0007073879241943359,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": true,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: main.jsx",
+      "success": false,
+      "duration": 0.0001766681671142578,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/accordion.jsx",
+      "success": false,
+      "duration": 9.918212890625e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/alert-dialog.jsx",
+      "success": false,
+      "duration": 0.00012731552124023438,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/alert.jsx",
+      "success": false,
+      "duration": 7.128715515136719e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": true,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/aspect-ratio.jsx",
+      "success": false,
+      "duration": 4.7206878662109375e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/avatar.jsx",
+      "success": false,
+      "duration": 7.843971252441406e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/badge.jsx",
+      "success": false,
+      "duration": 7.319450378417969e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": true,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/breadcrumb.jsx",
+      "success": false,
+      "duration": 8.916854858398438e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/button.jsx",
+      "success": false,
+      "duration": 7.534027099609375e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": true,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/calendar.jsx",
+      "success": false,
+      "duration": 9.965896606445312e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/card.jsx",
+      "success": false,
+      "duration": 7.963180541992188e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/carousel.jsx",
+      "success": false,
+      "duration": 0.00015211105346679688,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/chart.jsx",
+      "success": false,
+      "duration": 0.00023174285888671875,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/checkbox.jsx",
+      "success": false,
+      "duration": 8.487701416015625e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/collapsible.jsx",
+      "success": false,
+      "duration": 6.079673767089844e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/command.jsx",
+      "success": false,
+      "duration": 0.0001277923583984375,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/context-menu.jsx",
+      "success": false,
+      "duration": 0.00021266937255859375,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/dialog.jsx",
+      "success": false,
+      "duration": 0.00012111663818359375,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/drawer.jsx",
+      "success": false,
+      "duration": 0.00013065338134765625,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/dropdown-menu.jsx",
+      "success": false,
+      "duration": 0.0002052783966064453,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/form.jsx",
+      "success": false,
+      "duration": 0.00011086463928222656,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/hover-card.jsx",
+      "success": false,
+      "duration": 6.985664367675781e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/input-otp.jsx",
+      "success": false,
+      "duration": 8.58306884765625e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/input.jsx",
+      "success": false,
+      "duration": 5.936622619628906e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/label.jsx",
+      "success": false,
+      "duration": 5.030632019042969e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/menubar.jsx",
+      "success": false,
+      "duration": 0.00020694732666015625,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/navigation-menu.jsx",
+      "success": false,
+      "duration": 0.00016617774963378906,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": true,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/pagination.jsx",
+      "success": false,
+      "duration": 9.942054748535156e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/popover.jsx",
+      "success": false,
+      "duration": 7.43865966796875e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/progress.jsx",
+      "success": false,
+      "duration": 5.316734313964844e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/radio-group.jsx",
+      "success": false,
+      "duration": 6.723403930664062e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/resizable.jsx",
+      "success": false,
+      "duration": 8.058547973632812e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/scroll-area.jsx",
+      "success": false,
+      "duration": 7.224082946777344e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/select.jsx",
+      "success": false,
+      "duration": 0.0001761913299560547,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/separator.jsx",
+      "success": false,
+      "duration": 5.2928924560546875e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/sheet.jsx",
+      "success": false,
+      "duration": 0.00012564659118652344,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/sidebar.jsx",
+      "success": false,
+      "duration": 0.000438690185546875,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": true,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/skeleton.jsx",
+      "success": false,
+      "duration": 4.744529724121094e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/slider.jsx",
+      "success": false,
+      "duration": 8.082389831542969e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/sonner.jsx",
+      "success": false,
+      "duration": 4.792213439941406e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/switch.jsx",
+      "success": false,
+      "duration": 7.653236389160156e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/table.jsx",
+      "success": false,
+      "duration": 8.869171142578125e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/tabs.jsx",
+      "success": false,
+      "duration": 7.724761962890625e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/textarea.jsx",
+      "success": false,
+      "duration": 5.650520324707031e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/toggle-group.jsx",
+      "success": false,
+      "duration": 7.367134094238281e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/toggle.jsx",
+      "success": false,
+      "duration": 6.413459777832031e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": true,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/ui/tooltip.jsx",
+      "success": false,
+      "duration": 8.225440979003906e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/CharacterPortrait.jsx",
+      "success": false,
+      "duration": 6.937980651855469e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": true,
+        "has_loading_states": false,
+        "uses_proper_endpoints": true,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/ProgressBar.jsx",
+      "success": false,
+      "duration": 7.05718994140625e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/InventorySlot.jsx",
+      "success": false,
+      "duration": 7.367134094238281e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": true,
+        "has_loading_states": false,
+        "uses_proper_endpoints": true,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/GamePanel.jsx",
+      "success": false,
+      "duration": 7.367134094238281e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/ActionButton.jsx",
+      "success": false,
+      "duration": 8.058547973632812e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/GameInterface.jsx",
+      "success": false,
+      "duration": 0.00016736984252929688,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": true,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/MobileGameInterface.jsx",
+      "success": false,
+      "duration": 0.00019693374633789062,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": true,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/ResponsiveGameWrapper.jsx",
+      "success": false,
+      "duration": 5.626678466796875e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/DialogueInterface.jsx",
+      "success": false,
+      "duration": 0.0001552104949951172,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": true,
+        "has_loading_states": false,
+        "uses_proper_endpoints": true,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/EquipmentTooltip.jsx",
+      "success": false,
+      "duration": 0.0003070831298828125,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/EquipmentSlot.jsx",
+      "success": false,
+      "duration": 0.0003027915954589844,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/InventoryGrid.jsx",
+      "success": false,
+      "duration": 0.0006091594696044922,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/CharacterEquipment.jsx",
+      "success": false,
+      "duration": 0.00029468536376953125,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/EquipmentManager.jsx",
+      "success": true,
+      "duration": 0.00015306472778320312,
+      "error_message": null,
+      "details": {
+        "has_api_calls": true,
+        "api_call_count": 5,
+        "has_error_handling": true,
+        "has_loading_states": true,
+        "uses_proper_endpoints": true,
+        "has_session_management": true,
+        "integration_quality": 1.0
+      }
+    },
+    {
+      "test_name": "API Integration: components/game/EquipmentManager_fixed.jsx",
+      "success": true,
+      "duration": 0.0001621246337890625,
+      "error_message": null,
+      "details": {
+        "has_api_calls": true,
+        "api_call_count": 6,
+        "has_error_handling": true,
+        "has_loading_states": true,
+        "uses_proper_endpoints": true,
+        "has_session_management": true,
+        "integration_quality": 1.0
+      }
+    },
+    {
+      "test_name": "API Integration: hooks/use-mobile.js",
+      "success": false,
+      "duration": 5.7697296142578125e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "API Integration: lib/utils.js",
+      "success": false,
+      "duration": 4.458427429199219e-05,
+      "error_message": "Poor API integration patterns",
+      "details": {
+        "has_api_calls": false,
+        "api_call_count": 0,
+        "has_error_handling": false,
+        "has_loading_states": false,
+        "uses_proper_endpoints": false,
+        "has_session_management": false,
+        "integration_quality": 0
+      }
+    },
+    {
+      "test_name": "Overall API Integration Quality",
+      "success": true,
+      "duration": 0,
+      "error_message": null,
+      "details": {
+        "overall_quality": 2.1746153846153846,
+        "analysis": {
+          "files_with_api_calls": 2,
+          "total_api_calls": 11,
+          "error_handling_present": 5,
+          "loading_states": 2,
+          "proper_endpoints": 8,
+          "session_management": 8
+        },
+        "total_files_analyzed": 65
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/accordion.jsx",
+      "success": false,
+      "duration": 0.0005960464477539062,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/alert-dialog.jsx",
+      "success": false,
+      "duration": 0.00013065338134765625,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/alert.jsx",
+      "success": false,
+      "duration": 7.581710815429688e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/aspect-ratio.jsx",
+      "success": false,
+      "duration": 4.935264587402344e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/avatar.jsx",
+      "success": false,
+      "duration": 7.62939453125e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/badge.jsx",
+      "success": false,
+      "duration": 5.14984130859375e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/breadcrumb.jsx",
+      "success": false,
+      "duration": 5.817413330078125e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/button.jsx",
+      "success": false,
+      "duration": 5.2928924560546875e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/calendar.jsx",
+      "success": false,
+      "duration": 6.151199340820312e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/card.jsx",
+      "success": false,
+      "duration": 4.982948303222656e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/carousel.jsx",
+      "success": false,
+      "duration": 7.104873657226562e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": true,
+        "has_effect_cleanup": true,
+        "uses_key_props": true,
+        "has_unnecessary_renders": true,
+        "performance_score": 0.55
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/chart.jsx",
+      "success": false,
+      "duration": 8.916854858398438e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": true,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": true,
+        "has_unnecessary_renders": true,
+        "performance_score": 0.3
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/checkbox.jsx",
+      "success": false,
+      "duration": 4.291534423828125e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/collapsible.jsx",
+      "success": false,
+      "duration": 3.409385681152344e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/command.jsx",
+      "success": false,
+      "duration": 7.700920104980469e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/context-menu.jsx",
+      "success": false,
+      "duration": 0.00012302398681640625,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/dialog.jsx",
+      "success": false,
+      "duration": 6.818771362304688e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/drawer.jsx",
+      "success": false,
+      "duration": 7.414817810058594e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/dropdown-menu.jsx",
+      "success": false,
+      "duration": 0.00013113021850585938,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/form.jsx",
+      "success": false,
+      "duration": 6.4849853515625e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": true,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/hover-card.jsx",
+      "success": false,
+      "duration": 4.506111145019531e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/input-otp.jsx",
+      "success": false,
+      "duration": 5.8650970458984375e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/input.jsx",
+      "success": false,
+      "duration": 3.981590270996094e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/label.jsx",
+      "success": false,
+      "duration": 3.24249267578125e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/menubar.jsx",
+      "success": false,
+      "duration": 0.00012493133544921875,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/navigation-menu.jsx",
+      "success": false,
+      "duration": 0.00010657310485839844,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/pagination.jsx",
+      "success": false,
+      "duration": 5.6743621826171875e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/popover.jsx",
+      "success": false,
+      "duration": 4.482269287109375e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/progress.jsx",
+      "success": false,
+      "duration": 3.5762786865234375e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/radio-group.jsx",
+      "success": false,
+      "duration": 5.340576171875e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/resizable.jsx",
+      "success": false,
+      "duration": 5.340576171875e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/scroll-area.jsx",
+      "success": false,
+      "duration": 5.2928924560546875e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/select.jsx",
+      "success": false,
+      "duration": 9.584426879882812e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/separator.jsx",
+      "success": false,
+      "duration": 3.409385681152344e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/sheet.jsx",
+      "success": false,
+      "duration": 7.486343383789062e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/sidebar.jsx",
+      "success": true,
+      "duration": 7.271766662597656e-05,
+      "error_message": null,
+      "details": {
+        "uses_memo": true,
+        "uses_callback": true,
+        "has_effect_cleanup": true,
+        "uses_key_props": true,
+        "has_unnecessary_renders": true,
+        "performance_score": 0.8
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/skeleton.jsx",
+      "success": false,
+      "duration": 3.075599670410156e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/slider.jsx",
+      "success": false,
+      "duration": 3.981590270996094e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": true,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": true,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.5
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/sonner.jsx",
+      "success": false,
+      "duration": 3.504753112792969e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/switch.jsx",
+      "success": false,
+      "duration": 4.076957702636719e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/table.jsx",
+      "success": false,
+      "duration": 5.173683166503906e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/tabs.jsx",
+      "success": false,
+      "duration": 5.269050598144531e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/textarea.jsx",
+      "success": false,
+      "duration": 3.9577484130859375e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/toggle-group.jsx",
+      "success": false,
+      "duration": 4.8160552978515625e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/toggle.jsx",
+      "success": false,
+      "duration": 4.363059997558594e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: ui/tooltip.jsx",
+      "success": false,
+      "duration": 4.506111145019531e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/CharacterPortrait.jsx",
+      "success": false,
+      "duration": 4.3392181396484375e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/ProgressBar.jsx",
+      "success": false,
+      "duration": 4.2438507080078125e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/InventorySlot.jsx",
+      "success": false,
+      "duration": 5.412101745605469e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/GamePanel.jsx",
+      "success": false,
+      "duration": 4.291534423828125e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/ActionButton.jsx",
+      "success": false,
+      "duration": 5.2928924560546875e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/GameInterface.jsx",
+      "success": false,
+      "duration": 0.00012111663818359375,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": true,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.25
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/MobileGameInterface.jsx",
+      "success": false,
+      "duration": 0.00015401840209960938,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": true,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.25
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/ResponsiveGameWrapper.jsx",
+      "success": false,
+      "duration": 3.695487976074219e-05,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": true,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.25
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/DialogueInterface.jsx",
+      "success": false,
+      "duration": 0.00010323524475097656,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": true,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.25
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/EquipmentTooltip.jsx",
+      "success": false,
+      "duration": 0.00014281272888183594,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": true,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.25
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/EquipmentSlot.jsx",
+      "success": false,
+      "duration": 0.00016117095947265625,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/InventoryGrid.jsx",
+      "success": false,
+      "duration": 0.00024127960205078125,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": true,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.25
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/CharacterEquipment.jsx",
+      "success": false,
+      "duration": 0.00017786026000976562,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": true,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.25
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/EquipmentManager.jsx",
+      "success": false,
+      "duration": 0.000263214111328125,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Performance Patterns: game/EquipmentManager_fixed.jsx",
+      "success": false,
+      "duration": 0.0002269744873046875,
+      "error_message": "Poor performance patterns",
+      "details": {
+        "uses_memo": false,
+        "uses_callback": false,
+        "has_effect_cleanup": false,
+        "uses_key_props": false,
+        "has_unnecessary_renders": false,
+        "performance_score": 0.0
+      }
+    },
+    {
+      "test_name": "Overall Performance Patterns",
+      "success": false,
+      "duration": 0,
+      "error_message": "Performance patterns score 0.07 below threshold 0.5",
+      "details": {
+        "overall_performance": 0.07377049180327869,
+        "analysis": {
+          "components_with_memo": 3,
+          "components_with_callback": 2,
+          "components_with_effect_cleanup": 3,
+          "components_with_key_props": 10,
+          "total_components": 61
+        }
+      }
+    },
+    {
+      "test_name": "Responsive CSS: App.css",
+      "success": true,
+      "duration": 0.00019502639770507812,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive CSS: index.css",
+      "success": false,
+      "duration": 0.00038433074951171875,
+      "error_message": "Poor responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: App.jsx",
+      "success": true,
+      "duration": 0.00010728836059570312,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: main.jsx",
+      "success": false,
+      "duration": 6.437301635742188e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/accordion.jsx",
+      "success": true,
+      "duration": 5.364418029785156e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/alert-dialog.jsx",
+      "success": true,
+      "duration": 3.314018249511719e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/alert.jsx",
+      "success": true,
+      "duration": 4.649162292480469e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/aspect-ratio.jsx",
+      "success": false,
+      "duration": 3.123283386230469e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/avatar.jsx",
+      "success": true,
+      "duration": 3.743171691894531e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/badge.jsx",
+      "success": true,
+      "duration": 4.124641418457031e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/breadcrumb.jsx",
+      "success": true,
+      "duration": 2.5987625122070312e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/button.jsx",
+      "success": true,
+      "duration": 2.7894973754882812e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/calendar.jsx",
+      "success": true,
+      "duration": 2.574920654296875e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/card.jsx",
+      "success": true,
+      "duration": 4.649162292480469e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/carousel.jsx",
+      "success": true,
+      "duration": 8.130073547363281e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/chart.jsx",
+      "success": true,
+      "duration": 0.00010251998901367188,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/checkbox.jsx",
+      "success": true,
+      "duration": 4.0531158447265625e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/collapsible.jsx",
+      "success": false,
+      "duration": 4.172325134277344e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/command.jsx",
+      "success": true,
+      "duration": 7.224082946777344e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/context-menu.jsx",
+      "success": true,
+      "duration": 0.00010538101196289062,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/dialog.jsx",
+      "success": true,
+      "duration": 2.9802322387695312e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/drawer.jsx",
+      "success": true,
+      "duration": 2.8133392333984375e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/dropdown-menu.jsx",
+      "success": true,
+      "duration": 0.00010037422180175781,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/form.jsx",
+      "success": true,
+      "duration": 6.198883056640625e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/hover-card.jsx",
+      "success": false,
+      "duration": 4.8160552978515625e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/input-otp.jsx",
+      "success": true,
+      "duration": 4.839897155761719e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/input.jsx",
+      "success": true,
+      "duration": 3.2901763916015625e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": true,
+        "responsive_score": 0.7
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/label.jsx",
+      "success": true,
+      "duration": 3.24249267578125e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/menubar.jsx",
+      "success": true,
+      "duration": 9.989738464355469e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/navigation-menu.jsx",
+      "success": true,
+      "duration": 6.341934204101562e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": true,
+        "responsive_score": 0.7
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/pagination.jsx",
+      "success": true,
+      "duration": 2.6702880859375e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/popover.jsx",
+      "success": false,
+      "duration": 5.14984130859375e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/progress.jsx",
+      "success": true,
+      "duration": 3.695487976074219e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/radio-group.jsx",
+      "success": true,
+      "duration": 4.124641418457031e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/resizable.jsx",
+      "success": true,
+      "duration": 4.5299530029296875e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/scroll-area.jsx",
+      "success": true,
+      "duration": 4.029273986816406e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": false,
+        "responsive_score": 0.7
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/select.jsx",
+      "success": true,
+      "duration": 8.702278137207031e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/separator.jsx",
+      "success": false,
+      "duration": 3.552436828613281e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/sheet.jsx",
+      "success": true,
+      "duration": 2.7179718017578125e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/sidebar.jsx",
+      "success": true,
+      "duration": 5.364418029785156e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/skeleton.jsx",
+      "success": false,
+      "duration": 3.075599670410156e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/slider.jsx",
+      "success": true,
+      "duration": 7.462501525878906e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": false,
+        "responsive_score": 0.7
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/sonner.jsx",
+      "success": false,
+      "duration": 3.4809112548828125e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/switch.jsx",
+      "success": true,
+      "duration": 3.9577484130859375e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/table.jsx",
+      "success": false,
+      "duration": 5.316734313964844e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/tabs.jsx",
+      "success": true,
+      "duration": 4.4345855712890625e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/textarea.jsx",
+      "success": true,
+      "duration": 2.9325485229492188e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": true,
+        "responsive_score": 0.7
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/toggle-group.jsx",
+      "success": true,
+      "duration": 4.2438507080078125e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/toggle.jsx",
+      "success": true,
+      "duration": 2.6226043701171875e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/ui/tooltip.jsx",
+      "success": false,
+      "duration": 4.792213439941406e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/CharacterPortrait.jsx",
+      "success": true,
+      "duration": 2.4080276489257812e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/ProgressBar.jsx",
+      "success": true,
+      "duration": 2.3365020751953125e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/InventorySlot.jsx",
+      "success": true,
+      "duration": 2.6941299438476562e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/GamePanel.jsx",
+      "success": true,
+      "duration": 2.384185791015625e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/ActionButton.jsx",
+      "success": true,
+      "duration": 2.4080276489257812e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/GameInterface.jsx",
+      "success": true,
+      "duration": 0.0001068115234375,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/MobileGameInterface.jsx",
+      "success": true,
+      "duration": 0.000118255615234375,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/ResponsiveGameWrapper.jsx",
+      "success": false,
+      "duration": 3.814697265625e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/DialogueInterface.jsx",
+      "success": true,
+      "duration": 5.745887756347656e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": true,
+        "responsive_score": 0.7
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/EquipmentTooltip.jsx",
+      "success": true,
+      "duration": 0.00012755393981933594,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/EquipmentSlot.jsx",
+      "success": true,
+      "duration": 4.4345855712890625e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/InventoryGrid.jsx",
+      "success": true,
+      "duration": 7.271766662597656e-05,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": true,
+        "has_breakpoints": true,
+        "responsive_score": 1.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/CharacterEquipment.jsx",
+      "success": true,
+      "duration": 0.00014400482177734375,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.4
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/EquipmentManager.jsx",
+      "success": true,
+      "duration": 0.001432657241821289,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": true,
+        "responsive_score": 0.7
+      }
+    },
+    {
+      "test_name": "Responsive JSX: components/game/EquipmentManager_fixed.jsx",
+      "success": true,
+      "duration": 0.00015544891357421875,
+      "error_message": null,
+      "details": {
+        "has_responsive_design": true,
+        "has_mobile_support": false,
+        "has_breakpoints": true,
+        "responsive_score": 0.7
+      }
+    },
+    {
+      "test_name": "Responsive JSX: hooks/use-mobile.js",
+      "success": false,
+      "duration": 3.981590270996094e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Responsive JSX: lib/utils.js",
+      "success": false,
+      "duration": 3.1948089599609375e-05,
+      "error_message": "Limited responsive design patterns",
+      "details": {
+        "has_responsive_design": false,
+        "has_mobile_support": false,
+        "has_breakpoints": false,
+        "responsive_score": 0.0
+      }
+    },
+    {
+      "test_name": "Overall Responsive Design",
+      "success": true,
+      "duration": 0,
+      "error_message": null,
+      "details": {
+        "overall_responsive": 0.5134328358208955,
+        "analysis": {
+          "files_with_responsive_css": 53,
+          "files_with_mobile_classes": 20,
+          "files_with_breakpoints": 24,
+          "total_style_files": 67
+        }
+      }
+    }
+  ]
+}

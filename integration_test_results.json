@@ -1,0 +1,159 @@
+{
+  "test_summary": {
+    "total_tests": 6,
+    "successful_tests": 1,
+    "failed_tests": 5,
+    "success_rate": 16.666666666666664,
+    "average_duration": 0.013883511225382486
+  },
+  "server_availability": {
+    "backend": true,
+    "frontend": false
+  },
+  "detailed_results": [
+    {
+      "test_name": "Session Workflow",
+      "success": false,
+      "duration": 0.0026192665100097656,
+      "status_code": 200,
+      "error_message": "Missing required character key: name",
+      "details": null,
+      "workflow_steps": [
+        "Initializing session",
+        "Session initialized successfully",
+        "Validating session data structure",
+        "Session data structure validated",
+        "Validating character data"
+      ]
+    },
+    {
+      "test_name": "Equipment Workflow",
+      "success": false,
+      "duration": 0.012157201766967773,
+      "status_code": null,
+      "error_message": "Expecting value: line 1 column 1 (char 0)",
+      "details": null,
+      "workflow_steps": [
+        "Initializing session for equipment test",
+        "Session initialized",
+        "Browsing available equipment",
+        "Found 105 equipment items",
+        "Getting initial equipment overview"
+      ]
+    },
+    {
+      "test_name": "Quest Workflow",
+      "success": false,
+      "duration": 0.0049440860748291016,
+      "status_code": null,
+      "error_message": "Expecting value: line 1 column 1 (char 0)",
+      "details": null,
+      "workflow_steps": [
+        "Initializing session for quest test",
+        "Session initialized",
+        "Getting available quests"
+      ]
+    },
+    {
+      "test_name": "Combat Workflow",
+      "success": false,
+      "duration": 0.011703014373779297,
+      "status_code": 405,
+      "error_message": null,
+      "details": {
+        "abilities_count": 16,
+        "effects_count": 13,
+        "encounter_data": {
+          "encounter_type": "basic_combat",
+          "enemies": [
+            "shadow_wolf"
+          ],
+          "difficulty": "normal"
+        },
+        "encounter_success": false,
+        "stats_success": true
+      },
+      "workflow_steps": [
+        "Testing combat system health",
+        "Combat system health confirmed",
+        "Getting available combat abilities",
+        "Retrieved 16 combat abilities",
+        "Getting combat status effects",
+        "Retrieved 13 status effects",
+        "Creating combat encounter",
+        "Combat encounter creation failed (status: 405)",
+        "Getting combat statistics",
+        "Combat statistics retrieved"
+      ]
+    },
+    {
+      "test_name": "Concurrent User Workflow",
+      "success": true,
+      "duration": 0.04047989845275879,
+      "status_code": null,
+      "error_message": null,
+      "details": {
+        "num_users": 5,
+        "successful_sessions": 5,
+        "successful_equipment": 5,
+        "successful_quests": 5,
+        "success_rate": 100.0,
+        "user_results": [
+          {
+            "user_id": 2,
+            "session_init": true,
+            "equipment_browse": true,
+            "quest_browse": true,
+            "errors": []
+          },
+          {
+            "user_id": 1,
+            "session_init": true,
+            "equipment_browse": true,
+            "quest_browse": true,
+            "errors": []
+          },
+          {
+            "user_id": 0,
+            "session_init": true,
+            "equipment_browse": true,
+            "quest_browse": true,
+            "errors": []
+          },
+          {
+            "user_id": 4,
+            "session_init": true,
+            "equipment_browse": true,
+            "quest_browse": true,
+            "errors": []
+          },
+          {
+            "user_id": 3,
+            "session_init": true,
+            "equipment_browse": true,
+            "quest_browse": true,
+            "errors": []
+          }
+        ]
+      },
+      "workflow_steps": [
+        "Starting concurrent user test with 5 users",
+        "Completed 5 user sessions",
+        "Success rate: 100.0%"
+      ]
+    },
+    {
+      "test_name": "Data Consistency Workflow",
+      "success": false,
+      "duration": 0.011397600173950195,
+      "status_code": null,
+      "error_message": "Expecting value: line 1 column 1 (char 0)",
+      "details": null,
+      "workflow_steps": [
+        "Initializing session for consistency test",
+        "Initial session state captured",
+        "Performing multiple operations"
+      ]
+    }
+  ]
+}
