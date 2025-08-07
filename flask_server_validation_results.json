@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-07-18T01:08:37.314694",
+  "target_file": "/home/ubuntu/shadowlands-backend/src/main.py",
+  "base_url": "http://localhost:5001",
+  "results": {
+    "server_startup": {
+      "success": true
+    },
+    "basic_endpoints": {
+      "/api/health": {
+        "status_code": 200,
+        "success": true,
+        "response_time": 0.00177,
+        "description": "Health check",
+        "response_keys": [
+          "message",
+          "status",
+          "version"
+        ]
+      },
+      "/api/session/init": {
+        "status_code": 200,
+        "success": true,
+        "response_time": 0.002328,
+        "description": "Session initialization",
+        "response_keys": [
+          "character_data",
+          "message",
+          "success"
+        ]
+      },
+      "/api/equipment/test": {
+        "status_code": 200,
+        "success": true,
+        "response_time": 0.001572,
+        "description": "Equipment system test",
+        "response_keys": [
+          "character_status",
+          "message",
+          "success",
+          "system_status"
+        ]
+      },
+      "/api/equipment/stats": {
+        "status_code": 200,
+        "success": true,
+        "response_time": 0.005524,
+        "description": "Equipment statistics"
+      }
+    },
+    "equipment_workflow": {
+      "session_init": {
+        "status_code": 200,
+        "success": true
+      },
+      "get_available": {
+        "status_code": 200,
+        "success": true
+      },
+      "get_equipped": {
+        "status_code": 200,
+        "success": true
+      },
+      "equip_item": {
+        "status_code": 200,
+        "success": true
+      },
+      "unequip_item": {
+        "status_code": 405,
+        "success": false
+      }
+    },
+    "server_stability": {
+      "requests_sent": 15,
+      "successful_requests": 15,
+      "failed_requests": 0,
+      "timeouts": 0,
+      "average_response_time": 0.0028037389119466146,
+      "max_response_time": 0.0029261112213134766,
+      "success_rate": 100.0
+    }
+  },
+  "summary": {
+    "passed_categories": 4,
+    "total_categories": 4,
+    "success_rate": 100.0,
+    "basic_endpoint_success_rate": 100.0,
+    "workflow_success_rate": 80.0
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "timestamp": "2025-07-26T02:56:51.071780",
+  "base_url": "http://localhost:5001/api",
+  "endpoints": {
+    "/session/init": {
+      "endpoint": "/session/init",
+      "method": "POST",
+      "description": "Initialize game session",
+      "status_code": 200,
+      "response_time_ms": 5.06,
+      "success": true,
+      "content_type": "application/json",
+      "response_size": 511,
+      "json_valid": true,
+      "response_structure": {
+        "type": "object",
+        "keys": [
+          "character_data",
+          "message",
+          "success"
+        ],
+        "key_count": 3
+      },
+      "has_success_field": true,
+      "has_error_field": true,
+      "response_sample": "Response too large"
+    },
+    "/equipment/available": {
+      "endpoint": "/equipment/available",
+      "method": "GET",
+      "description": "Get available equipment",
+      "status_code": 200,
+      "response_time_ms": 5.96,
+      "success": true,
+      "content_type": "application/json",
+      "response_size": 84017,
+      "json_valid": true,
+      "response_structure": {
+        "type": "object",
+        "keys": [
+          "character_corruption",
+          "character_level",
+          "equipment",
+          "message",
+          "success",
+          "total_count"
+        ],
+        "key_count": 6
+      },
+      "has_success_field": true,
+      "has_error_field": true,
+      "response_sample": "Response too large"
+    },
+    "/equipment/equipped": {
+      "endpoint": "/equipment/equipped",
+      "method": "GET",
+      "description": "Get equipped items",
+      "status_code": 200,
+      "response_time_ms": 2.89,
+      "success": true,
+      "content_type": "application/json",
+      "response_size": 666,
+      "json_valid": true,
+      "response_structure": {
+        "type": "object",
+        "keys": [
+          "equipment_slots",
+          "equipped_items",
+          "message",
+          "success",
+          "total_bonuses"
+        ],
+        "key_count": 5
+      },
+      "has_success_field": true,
+      "has_error_field": true,
+      "response_sample": "Response too large"
+    },
+    "/characters": {
+      "endpoint": "/characters",
+      "method": "GET",
+      "description": "Get character data",
+      "status_code": 400,
+      "response_time_ms": 2.44,
+      "success": false,
+      "content_type": "application/json",
+      "response_size": 34,
+      "json_valid": true,
+      "response_structure": {
+        "type": "object",
+        "keys": [
+          "error"
+        ],
+        "key_count": 1
+      },
+      "has_success_field": false,
+      "has_error_field": true,
+      "response_sample": {
+        "error": "No user session found"
+      }
+    },
+    "/combat/encounter/create": {
+      "endpoint": "/combat/encounter/create",
+      "method": "POST",
+      "description": "Create combat encounter",
+      "status_code": 405,
+      "response_time_ms": 2.66,
+      "success": false,
+      "content_type": "text/html; charset=utf-8",
+      "response_size": 153,
+      "json_valid": false,
+      "response_text": "<!doctype html>\n<html lang=en>\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>\n"
+    },
+    "/quests": {
+      "endpoint": "/quests",
+      "method": "GET",
+      "description": "Get quest data",
+      "status_code": 400,
+      "response_time_ms": 2.3,
+      "success": false,
+      "content_type": "application/json",
+      "response_size": 112,
+      "json_valid": true,
+      "response_structure": {
+        "type": "object",
+        "keys": [
+          "error",
+          "message",
+          "status_code",
+          "success"
+        ],
+        "key_count": 4
+      },
+      "has_success_field": true,
+      "has_error_field": true,
+      "response_sample": {
+        "error": "No Character",
+        "message": "No character selected or session expired",
+        "status_code": 400,
+        "success": false
+      }
+    }
+  },
+  "standardization_issues": [],
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Response Format",
+      "recommendation": "Implement standard response wrapper",
+      "details": "All API responses should follow: {success: boolean, data: any, error?: string, message?: string}"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "HTTP Status Codes",
+      "recommendation": "Standardize status codes",
+      "details": "Use 200 for success, 400 for client errors, 500 for server errors consistently"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Error Handling",
+      "recommendation": "Consistent error response format",
+      "details": "All errors should include: {success: false, error: 'error_code', message: 'human readable message'}"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "timestamp": "2025-07-18T01:05:21.641724",
+  "target_file": "/home/ubuntu/shadowlands-backend/src/main.py",
+  "imports": {
+    "total_imports": 20,
+    "local_imports": 7,
+    "blueprint_imports": 6,
+    "import_list": [
+      "os",
+      "sys",
+      "datetime.datetime",
+      "datetime.timedelta",
+      "secrets",
+      "flask.Flask",
+      "flask.send_from_directory",
+      "flask.jsonify",
+      "flask.request",
+      "flask.session",
+      "flask_cors.CORS",
+      "flask_sqlalchemy.SQLAlchemy",
+      "uuid",
+      "src.routes.user.user_bp",
+      "src.routes.location.location_bp",
+      "src.routes.quest.quest_bp",
+      "src.routes.narrative.narrative_bp",
+      "src.routes.equipment.equipment_bp",
+      "src.routes.combat.combat_bp",
+      "src.core_mechanics.core_mechanics"
+    ]
+  },
+  "functions": {
+    "total_functions": 25,
+    "duplicate_functions": 2,
+    "duplicates": {
+      "quickstart": [
+        326,
+        372
+      ],
+      "to_dict": [
+        44,
+        69
+      ]
+    }
+  },
+  "database": {
+    "database_type": "SQLite",
+    "has_initialization": true,
+    "has_app_context": true,
+    "has_pooling": true,
+    "issues": []
+  },
+  "import_execution": {
+    "flask": "SUCCESS",
+    "flask_cors": "SUCCESS",
+    "flask_sqlalchemy": "SUCCESS",
+    "src.routes.user": "SUCCESS",
+    "src.routes.equipment": "SUCCESS",
+    "src.routes.combat": "SUCCESS",
+    "src.core_mechanics": "SUCCESS"
+  },
+  "routes": {
+    "total_routes": 21,
+    "duplicate_routes": 1,
+    "routes": [
+      {
+        "path": "/api/characters",
+        "line": 163,
+        "definition": "@app.route('/api/characters', methods=['GET'])"
+      },
+      {
+        "path": "/api/characters",
+        "line": 173,
+        "definition": "@app.route('/api/characters', methods=['POST'])"
+      },
+      {
+        "path": "/api/character/<int:character_id>/select",
+        "line": 198,
+        "definition": "@app.route('/api/character/<int:character_id>/select', methods=['POST'])"
+      },
+      {
+        "path": "/api/character/current",
+        "line": 218,
+        "definition": "@app.route('/api/character/current', methods=['GET'])"
+      },
+      {
+        "path": "/api/character/save",
+        "line": 230,
+        "definition": "@app.route('/api/character/save', methods=['POST'])"
+      },
+      {
+        "path": "/",
+        "line": 272,
+        "definition": "@app.route('/', defaults={'path': ''})"
+      },
+      {
+        "path": "/<path:path>",
+        "line": 273,
+        "definition": "@app.route('/<path:path>')"
+      },
+      {
+        "path": "/api/health",
+        "line": 289,
+        "definition": "@app.route('/api/health', methods=['GET'])"
+      },
+      {
+        "path": "/api/info",
+        "line": 298,
+        "definition": "@app.route('/api/info', methods=['GET'])"
+      },
+      {
+        "path": "/api/quickstart",
+        "line": 325,
+        "definition": "@app.route('/api/quickstart', methods=['POST'])"
+      }
+    ],
+    "duplicates": [
+      "/api/characters"
+    ]
+  },
+  "flask_config": {
+    "has_debug": true,
+    "has_secret_key": true,
+    "has_cors": true,
+    "has_host_binding": true,
+    "issues": []
+  },
+  "minimal_app": {
+    "success": true,
+    "path": "/home/ubuntu/flask_minimal_test_app.py"
+  },
+  "summary": {
+    "total_issues": 3,
+    "total_warnings": 1,
+    "total_recommendations": 1,
+    "critical_issues": 3,
+    "issues": [
+      "Duplicate function 'quickstart' defined at lines: [326, 372]",
+      "Duplicate function 'to_dict' defined at lines: [44, 69]",
+      "Duplicate route definition: /api/characters"
+    ],
+    "warnings": [
+      "Debug mode is enabled - may cause performance issues"
+    ],
+    "recommendations": [
+      "Test with minimal app to isolate configuration issues"
+    ]
+  }
+}
