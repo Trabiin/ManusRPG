@@ -18,7 +18,7 @@ from copy import deepcopy
 import sys
 import os
 sys.path.append('/home/ubuntu')
-from core_mechanics_implementation import CoreMechanicsEngine
+from core_mechanics_fixed import CoreMechanicsEngine
 
 class ActionType(Enum):
     """Types of combat actions"""

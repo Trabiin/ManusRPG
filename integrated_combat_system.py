@@ -18,7 +18,7 @@ from copy import deepcopy
 import sys
 import os
 sys.path.append('/home/ubuntu')
-from core_mechanics_implementation import CoreMechanicsEngine
+from core_mechanics_fixed import CoreMechanicsEngine
 from advanced_combat_engine_fixed import AdvancedCombatEngine, CombatEncounter, CombatParticipant, ActionType, TargetType, DamageType
 from abilities_and_status_effects import AbilityRegistry, AbilityProcessor, StatusEffectDefinition, StatusEffectType
 from combat_ai_system import AIDirector, AIPersonality, AIDecision, AIDecisionType
