@@ -1,62 +1,147 @@
-"use client"
+import React, { createContext, useContext, useState } from 'react';
 
-import * as React from "react"
-import * as TabsPrimitive from "@radix-ui/react-tabs"
+// Utility function to combine class names
+const cn = (...classes) => classes.filter(Boolean).join(' ');
 
-import { cn } from "@/lib/utils"
+// Tabs context for managing state
+const TabsContext = createContext();
 
-function Tabs({
-  className,
-  ...props
+export function Tabs({ 
+  defaultValue, 
+  value: controlledValue, 
+  onValueChange, 
+  className = '', 
+  children, 
+  ...props 
 }) {
+  const [internalValue, setInternalValue] = useState(defaultValue || '');
+  
+  const isControlled = controlledValue !== undefined;
+  const value = isControlled ? controlledValue : internalValue;
+  
+  const handleValueChange = (newValue) => {
+    if (!isControlled) {
+      setInternalValue(newValue);
+    }
+    if (onValueChange) {
+      onValueChange(newValue);
+    }
+  };
+  
+  const contextValue = {
+    value,
+    onValueChange: handleValueChange
+  };
+  
   return (
-    <TabsPrimitive.Root
-      data-slot="tabs"
-      className={cn("flex flex-col gap-2", className)}
-      {...props} />
+    <TabsContext.Provider value={contextValue}>
+      <div
+        className={cn("flex flex-col gap-2", className)}
+        {...props}
+      >
+        {children}
+      </div>
+    </TabsContext.Provider>
   );
 }
 
-function TabsList({
-  className,
-  ...props
-}) {
+export function TabsList({ className = '', children, ...props }) {
   return (
-    <TabsPrimitive.List
-      data-slot="tabs-list"
+    <div
       className={cn(
         "bg-muted text-muted-foreground inline-flex h-9 w-fit items-center justify-center rounded-lg p-[3px]",
         className
       )}
-      {...props} />
+      role="tablist"
+      {...props}
+    >
+      {children}
+    </div>
   );
 }
 
-function TabsTrigger({
-  className,
-  ...props
+export function TabsTrigger({ 
+  value: triggerValue, 
+  className = '', 
+  children, 
+  disabled = false,
+  ...props 
 }) {
+  const context = useContext(TabsContext);
+  
+  if (!context) {
+    throw new Error('TabsTrigger must be used within a Tabs component');
+  }
+  
+  const { value: currentValue, onValueChange } = context;
+  const isActive = currentValue === triggerValue;
+  
+  const handleClick = () => {
+    if (!disabled && triggerValue !== undefined) {
+      onValueChange(triggerValue);
+    }
+  };
+  
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleClick();
+    }
+  };
+  
   return (
-    <TabsPrimitive.Trigger
-      data-slot="tabs-trigger"
+    <button
+      type="button"
+      role="tab"
+      aria-selected={isActive}
+      aria-controls={`tabpanel-${triggerValue}`}
+      tabIndex={isActive ? 0 : -1}
+      disabled={disabled}
+      onClick={handleClick}
+      onKeyDown={handleKeyDown}
       className={cn(
-        "data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50",
+        isActive 
+          ? "bg-background text-foreground shadow-sm" 
+          : "text-foreground hover:bg-accent hover:text-accent-foreground",
         className
       )}
-      {...props} />
+      {...props}
+    >
+      {children}
+    </button>
   );
 }
 
-function TabsContent({
-  className,
-  ...props
+export function TabsContent({ 
+  value: contentValue, 
+  className = '', 
+  children, 
+  ...props 
 }) {
+  const context = useContext(TabsContext);
+  
+  if (!context) {
+    throw new Error('TabsContent must be used within a Tabs component');
+  }
+  
+  const { value: currentValue } = context;
+  const isActive = currentValue === contentValue;
+  
+  if (!isActive) {
+    return null;
+  }
+  
   return (
-    <TabsPrimitive.Content
-      data-slot="tabs-content"
+    <div
+      role="tabpanel"
+      id={`tabpanel-${contentValue}`}
+      aria-labelledby={`tab-${contentValue}`}
       className={cn("flex-1 outline-none", className)}
-      {...props} />
+      {...props}
+    >
+      {children}
+    </div>
   );
 }
 
-export { Tabs, TabsList, TabsTrigger, TabsContent }

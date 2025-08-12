@@ -1,33 +1,8 @@
-@import "tailwindcss";
-@import "tw-animate-css";
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&family=Uncial+Antiqua&display=swap');
 
-@custom-variant dark (&:is(.dark *));
-
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   /* Shadowlands Color Palette */
@@ -65,24 +40,25 @@
   
   /* Default theme values */
   --radius: 0.5rem;
-  --background: var(--color-bg-primary);
-  --foreground: var(--color-text-primary);
-  --card: var(--color-bg-secondary);
-  --card-foreground: var(--color-text-primary);
-  --popover: var(--color-bg-secondary);
-  --popover-foreground: var(--color-text-primary);
-  --primary: var(--color-accent-gold);
-  --primary-foreground: var(--color-bg-primary);
-  --secondary: var(--color-bg-secondary);
-  --secondary-foreground: var(--color-text-primary);
-  --muted: var(--color-bg-secondary);
-  --muted-foreground: var(--color-text-secondary);
-  --accent: var(--color-accent-gold);
-  --accent-foreground: var(--color-bg-primary);
-  --destructive: var(--color-accent-corruption);
-  --border: var(--color-bg-secondary);
-  --input: var(--color-bg-secondary);
-  --ring: var(--color-accent-gold);
+  --background: 220 10% 17%;
+  --foreground: 60 9% 98%;
+  --card: 220 10% 20%;
+  --card-foreground: 60 9% 98%;
+  --popover: 220 10% 20%;
+  --popover-foreground: 60 9% 98%;
+  --primary: 51 100% 57%;
+  --primary-foreground: 220 10% 17%;
+  --secondary: 220 10% 29%;
+  --secondary-foreground: 60 9% 98%;
+  --muted: 220 10% 29%;
+  --muted-foreground: 60 5% 72%;
+  --accent: 51 100% 57%;
+  --accent-foreground: 220 10% 17%;
+  --destructive: 0 100% 27%;
+  --destructive-foreground: 60 9% 98%;
+  --border: 220 10% 29%;
+  --input: 220 10% 29%;
+  --ring: 51 100% 57%;
 }
 
 /* Corruption Level Overrides */
@@ -113,7 +89,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    border-color: hsl(var(--border));
   }
   
   body {
@@ -128,256 +104,268 @@
   }
 }
 
-/* Custom Shadowlands Components */
-.shadowlands-panel {
-  background: linear-gradient(145deg, var(--color-bg-secondary), var(--color-bg-primary));
-  border: 2px solid var(--color-bg-secondary);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  backdrop-filter: blur(2px);
-  position: relative;
-  overflow: hidden;
-}
-
-.shadowlands-panel::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(139, 0, 0, 0.05) 0%, transparent 70%);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity var(--transition-normal);
-}
-
-.shadowlands-panel.corrupted::before {
-  opacity: 1;
-}
-
-.shadowlands-button {
-  background: linear-gradient(145deg, var(--color-bg-secondary), var(--color-bg-primary));
-  border: 1px solid var(--color-bg-secondary);
-  color: var(--color-text-primary);
-  padding: var(--space-sm) var(--space-md);
-  border-radius: var(--radius-sm);
-  font-family: var(--font-secondary);
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition-normal);
-  position: relative;
-  overflow: hidden;
-}
-
-.shadowlands-button:hover {
-  background: linear-gradient(145deg, #5a5a5a, var(--color-bg-secondary));
-  box-shadow: var(--shadow-sm);
-}
-
-.shadowlands-button.primary {
-  background: linear-gradient(145deg, var(--color-accent-gold), #b8941a);
-  color: var(--color-bg-primary);
-}
-
-.shadowlands-button.danger {
-  background: linear-gradient(145deg, var(--color-accent-corruption), #660000);
-  color: var(--color-text-primary);
-}
-
-.progress-bar {
-  background: var(--color-bg-primary);
-  border: 1px solid var(--color-bg-secondary);
-  border-radius: 12px;
-  height: 24px;
-  overflow: hidden;
-  position: relative;
-}
-
-.progress-fill {
-  height: 100%;
-  transition: width var(--transition-normal);
-  border-radius: 11px;
-  position: relative;
-}
-
-.progress-fill.health {
-  background: linear-gradient(90deg, var(--color-accent-corruption), #dc143c);
-}
-
-.progress-fill.mana {
-  background: linear-gradient(90deg, var(--color-accent-mystery), #8a2be2);
-}
-
-.progress-fill.corruption {
-  background: linear-gradient(90deg, var(--color-bg-primary), var(--color-accent-corruption));
-}
-
-.progress-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: var(--font-secondary);
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--color-text-primary);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  pointer-events: none;
-}
-
-.character-portrait {
-  position: relative;
-  border-radius: var(--radius);
-  overflow: hidden;
-  border: 2px solid var(--color-bg-secondary);
-}
-
-.character-portrait img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.inventory-slot {
-  aspect-ratio: 1;
-  background: var(--color-bg-primary);
-  border: 2px solid var(--color-bg-secondary);
-  border-radius: var(--radius-sm);
-  position: relative;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.inventory-slot:hover {
-  border-color: var(--color-accent-gold);
-  box-shadow: 0 0 8px rgba(218, 165, 32, 0.3);
-}
-
-.inventory-slot.rarity-poor { border-color: #9d9d9d; }
-.inventory-slot.rarity-common { border-color: #ffffff; }
-.inventory-slot.rarity-uncommon { border-color: #1eff00; }
-.inventory-slot.rarity-rare { border-color: #0070dd; }
-.inventory-slot.rarity-epic { border-color: #a335ee; }
-.inventory-slot.rarity-legendary { border-color: #ff8000; }
-
-/* Corruption Animations */
-@keyframes corruptionPulse {
-  0%, 100% { 
-    box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+@layer components {
+  /* Custom Shadowlands Components */
+  .shadowlands-panel {
+    background: linear-gradient(145deg, var(--color-bg-secondary), var(--color-bg-primary));
+    border: 2px solid var(--color-bg-secondary);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(2px);
+    position: relative;
+    overflow: hidden;
   }
-  50% { 
-    box-shadow: 0 0 15px rgba(139, 0, 0, 0.6);
-  }
-}
 
-@keyframes textGlitch {
-  0%, 90%, 100% {
-    transform: translate(0);
+  .shadowlands-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(139, 0, 0, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
   }
-  10% {
-    transform: translate(-1px, 1px);
-  }
-  20% {
-    transform: translate(1px, -1px);
-  }
-  30% {
-    transform: translate(-1px, -1px);
-  }
-  40% {
-    transform: translate(1px, 1px);
-  }
-  50% {
-    transform: translate(-1px, 1px);
-  }
-  60% {
-    transform: translate(1px, -1px);
-  }
-  70% {
-    transform: translate(-1px, -1px);
-  }
-  80% {
-    transform: translate(1px, 1px);
-  }
-}
 
-.corruption-level-3 .shadowlands-panel {
-  animation: corruptionPulse 3s infinite;
-}
+  .shadowlands-panel.corrupted::before {
+    opacity: 1;
+  }
 
-.corruption-level-4 .text {
-  animation: textGlitch 0.3s infinite;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
   .shadowlands-button {
-    min-height: 44px;
-    min-width: 44px;
+    background: linear-gradient(145deg, var(--color-bg-secondary), var(--color-bg-primary));
+    border: 1px solid var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: calc(var(--radius) - 4px);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
   }
-  
+
+  .shadowlands-button:hover {
+    background: linear-gradient(145deg, #5a5a5a, var(--color-bg-secondary));
+    box-shadow: var(--shadow-sm);
+  }
+
+  .shadowlands-button.primary {
+    background: linear-gradient(145deg, var(--color-accent-gold), #b8941a);
+    color: var(--color-bg-primary);
+  }
+
+  .shadowlands-button.danger {
+    background: linear-gradient(145deg, var(--color-accent-corruption), #660000);
+    color: var(--color-text-primary);
+  }
+
+  .progress-bar {
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: 12px;
+    height: 24px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress-fill {
+    height: 100%;
+    transition: width var(--transition-normal);
+    border-radius: 11px;
+    position: relative;
+  }
+
+  .progress-fill.health {
+    background: linear-gradient(90deg, var(--color-accent-corruption), #dc143c);
+  }
+
+  .progress-fill.mana {
+    background: linear-gradient(90deg, var(--color-accent-mystery), #8a2be2);
+  }
+
+  .progress-fill.corruption {
+    background: linear-gradient(90deg, var(--color-bg-primary), var(--color-accent-corruption));
+  }
+
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-secondary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+  }
+
+  .character-portrait {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 2px solid var(--color-bg-secondary);
+  }
+
+  .character-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .inventory-slot {
-    min-width: 48px;
-    min-height: 48px;
+    aspect-ratio: 1;
+    background: var(--color-bg-primary);
+    border: 2px solid var(--color-bg-secondary);
+    border-radius: calc(var(--radius) - 4px);
+    position: relative;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-/* Game-specific layouts */
-.game-layout {
-  display: grid;
-  grid-template-areas: 
-    "sidebar main questpanel"
-    "actionbar actionbar actionbar";
-  grid-template-columns: 250px 1fr 250px;
-  grid-template-rows: 1fr auto;
-  height: 100vh;
-  gap: var(--space-md);
-  padding: var(--space-md);
-}
+  .inventory-slot:hover {
+    border-color: var(--color-accent-gold);
+    box-shadow: 0 0 8px rgba(218, 165, 32, 0.3);
+  }
 
-.game-sidebar {
-  grid-area: sidebar;
-}
+  .inventory-slot.rarity-poor { border-color: #9d9d9d; }
+  .inventory-slot.rarity-common { border-color: #ffffff; }
+  .inventory-slot.rarity-uncommon { border-color: #1eff00; }
+  .inventory-slot.rarity-rare { border-color: #0070dd; }
+  .inventory-slot.rarity-epic { border-color: #a335ee; }
+  .inventory-slot.rarity-legendary { border-color: #ff8000; }
 
-.game-main {
-  grid-area: main;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #1a1a1a 100%);
-  border-radius: var(--radius);
-  position: relative;
-  overflow: hidden;
-}
-
-.game-questpanel {
-  grid-area: questpanel;
-}
-
-.game-actionbar {
-  grid-area: actionbar;
-  height: 80px;
-}
-
-@media (max-width: 1024px) {
+  /* Game-specific layouts */
   .game-layout {
+    display: grid;
     grid-template-areas: 
-      "main"
-      "actionbar";
-    grid-template-columns: 1fr;
+      "sidebar main questpanel"
+      "actionbar actionbar actionbar";
+    grid-template-columns: 250px 1fr 250px;
     grid-template-rows: 1fr auto;
+    height: 100vh;
+    gap: var(--space-md);
+    padding: var(--space-md);
   }
-  
-  .game-sidebar,
+
+  .game-sidebar {
+    grid-area: sidebar;
+  }
+
+  .game-main {
+    grid-area: main;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #1a1a1a 100%);
+    border-radius: var(--radius);
+    position: relative;
+    overflow: hidden;
+  }
+
   .game-questpanel {
-    display: none;
+    grid-area: questpanel;
+  }
+
+  .game-actionbar {
+    grid-area: actionbar;
+    height: 80px;
   }
 }
 
-@media (max-width: 768px) {
-  .game-layout {
-    padding: var(--space-sm);
-    gap: var(--space-sm);
+@layer utilities {
+  /* Corruption Animations */
+  @keyframes corruptionPulse {
+    0%, 100% { 
+      box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 15px rgba(139, 0, 0, 0.6);
+    }
+  }
+
+  @keyframes textGlitch {
+    0%, 90%, 100% {
+      transform: translate(0);
+    }
+    10% {
+      transform: translate(-1px, 1px);
+    }
+    20% {
+      transform: translate(1px, -1px);
+    }
+    30% {
+      transform: translate(-1px, -1px);
+    }
+    40% {
+      transform: translate(1px, 1px);
+    }
+    50% {
+      transform: translate(-1px, 1px);
+    }
+    60% {
+      transform: translate(1px, -1px);
+    }
+    70% {
+      transform: translate(-1px, -1px);
+    }
+    80% {
+      transform: translate(1px, 1px);
+    }
+  }
+
+  .corruption-level-3 .shadowlands-panel {
+    animation: corruptionPulse 3s infinite;
+  }
+
+  .corruption-level-4 .text {
+    animation: textGlitch 0.3s infinite;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .shadowlands-button {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    .inventory-slot {
+      min-width: 48px;
+      min-height: 48px;
+    }
+
+    .game-layout {
+      grid-template-areas: 
+        "main"
+        "actionbar";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      padding: var(--space-sm);
+      gap: var(--space-sm);
+    }
+    
+    .game-sidebar,
+    .game-questpanel {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .game-layout {
+      grid-template-areas: 
+        "main"
+        "actionbar";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+    }
+    
+    .game-sidebar,
+    .game-questpanel {
+      display: none;
+    }
   }
 }
 
